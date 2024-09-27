@@ -1,0 +1,60 @@
+/* Navbar.css */
+
+/* Updated Navbar with Fixed Position */
+/* Navbar.css */
+
+.navbar {
+  position: fixed; /* Stick the navbar to the top of the viewport */
+  top: 0;
+  width: 100%;
+  background-color: #00313C;
+  padding: 20px 40px;
+  z-index: 1000; /* High z-index to ensure it stays on top of other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Additional styles for navbar links, logo, etc. */
+.navbar-logo img {
+  height: 70px; /* Adjust the logo size */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 35px; /* Space between links */
+  margin: 0;
+  padding: 0;
+  margin-right: 25px;
+}
+
+/* .navbar-links li {
+  font-weight: bold;
+} */
+
+.navbar-links a {
+  color: #ffffff; /* Text color */
+  text-decoration: none;
+  font-weight: 400;
+  background-color: transparent; /* Transparent background */
+  padding: 10px 20px; /* Padding for spacing */
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #74AA50; /* Green color on hover */
+}
+
+.navbar-links a:focus {
+  background-color: transparent; /* Remove focus background color */
+  outline: none; /* Remove the default outline */
+}
+
+/* Adjust the main content's top padding to avoid being hidden under the navbar */
+.main-content {
+  padding-top: 80px; /* Adjust based on navbar height */
+}

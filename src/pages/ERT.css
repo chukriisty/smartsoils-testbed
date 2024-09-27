@@ -1,0 +1,407 @@
+/* ERT2D.css */
+body, .ert2d-page {
+  font-family: 'Karla', sans-serif;
+  margin-top: 100px;
+}
+
+/* main page */
+
+.page {
+  display: grid;
+  grid-template-rows: 1% 30% 45% 10%;
+  grid-template-columns: 10% 47.5% 37.5%;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+  width: 100%;
+  padding: 50px;
+  margin-top: 25px;
+}
+
+/* panel */
+
+.cleantop {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.note {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-column-gap: 50px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  color: #000000; /* Black text for clear readability */
+  border: 2px solid #4b6043; /* Add a border to make it pop */
+  width: 80%;
+  padding: 0px;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-left:100px;
+}
+
+.calibration {
+  grid-column: 3;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffff; /* Light background color for a fresh, nature-inspired feel */
+  border-radius: 10px; /* Rounded corners for a softer, organic feel */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Softer shadow for a more natural effect */
+  color: #000000; /* Black text for clear readability */
+  border: 5px solid #63666A;
+  padding: 20px;
+  overflow: hidden; /* Add a right margin */
+}
+
+
+.map {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  background-color: #f0f8e7; 
+  border-radius: 10px; 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+  color: #000000;
+  border: 5px solid #8b9a6d;
+  padding: 20px;
+  overflow: hidden;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px; /* Reduced height */
+  margin-left: 20px; /* Add left margin */
+}
+
+.profile {
+  grid-column: 3;
+  grid-row: 3;
+  background-color: #f0f8e7;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  color: #000000;
+  border: 5px solid #8b9a6d;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px; /* Reduced height */
+  margin-right: 20px; /* Add right margin */
+}
+
+.cleanbottom {
+  grid-column: 1 / 4;
+  grid-row: 4;
+  background-color: #ffffff;
+  margin-top: -90px;
+}
+
+/* text */
+
+.box {
+  display: flex;
+  font-size: 20px;
+  color: #ffff; /* Dark green color for the title */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #4b6043; /* White background for the title */
+  padding: 12px 25px;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.box:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+  background-color: #8b9a6d; /* Change color on hover */
+}
+
+/* arrow */
+
+.arrow {
+  font-size: 40px;
+  color: #4b6043;
+  text-decoration: none;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.arrow:hover {
+  text-decoration: none; /* Removes underline on hover */
+  transform: translateX(-5px); /* Shift slightly left */
+  color: #6b8043;
+}
+
+.arrowtext {
+  font-size: 12px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+/* description */
+
+.notedescription {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 300px;
+  margin-left: 35px;
+}
+
+.notevariable {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: #ffffff;
+  text-align: left;
+  padding: 30px;
+}
+
+.variable-text {
+  font-size: 13px; /* Adjust the size as needed */
+  color: #007681; 
+}
+
+
+
+.custom-line {
+  width: 100%;
+  height: 2px;
+  background-color: #000000; /* Dark grey color for the line */
+  border: none;
+  margin: 10px 0 20px 0; /* Adjust the margin to position the line */
+}
+
+.inputbox {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -30px;
+  margin-right:50px;
+  gap: 10px;
+}
+
+.inputbox label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.inputbox select {
+  padding: 5px;
+  font-size: 16px;
+  width: 190px;
+  height: 35px;
+}
+
+.inputbox option.service-small {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.inputbox input {
+  font-size: 16px;
+  padding: 5px;
+  width: 80px;
+  height: 35px;
+}
+
+/* calibration */
+
+.calibrationdescription {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #e6e5e6;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+}
+
+.calibrationvar {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calibrationimage {
+  width: 100%;
+  height: auto;  /* Maintain the aspect ratio of the image */
+  object-fit: fill;  /* Make sure the image is fully visible */
+}
+
+
+.calibrationbutton {
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  gap: 20px;
+  z-index: 1;
+  padding: 10px 20px;
+  background-color: #63666A;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.calibrationbutton:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+  background-color: #B1B3B3; /* Change color on hover */
+}
+
+/* map */
+
+.viewbutton1 {
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  gap: 20px;
+  z-index: 1;
+  padding: 10px 10px;
+  background-color: #8b9a6d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left:100px;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.viewbutton1:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+  background-color: #4b6043; /* Change color on hover */
+}
+
+.viewbutton2 {
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  gap: 20px;
+  z-index: 1;
+  padding: 10px 20px;
+  background-color: #8b9a6d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.viewbutton2:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+  background-color: #4b6043; /* Change color on hover */
+}
+
+/* cleanbottom */
+
+.playbutton {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  gap: 20px;
+  z-index: 1;
+  padding: 10px 20px;
+  background-color: #8b9a6d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.playbutton:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+  background-color: #4b6043; /* Change color on hover */
+}
+
+.slider {
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  appearance: none;
+  height: 5px;
+  background: #8b9a6d;
+  outline: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.range {
+  --ticksThickness: 2px;
+  --ticksHeight: 30%;
+  --ticksColor: silver;
+  display: inline-block;
+  background: silver;
+  background: linear-gradient(to right, var(--ticksColor) var(--ticksThickness), transparent 1px) repeat-x;
+  background-size: calc(100%/((var(--max) - var(--min)) / var(--step)) - .1%) var(--ticksHeight);
+  background-position: 0 bottom;
+  position: relative;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  appearance: none;
+  height: 5px;
+  background: #8b9a6d;
+  outline: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.range:hover {
+  opacity: 1;
+  background: linear-gradient(90deg, #8b9a6d 0%, #4b6043 100%); /* Gradient effect */
+}
+
+.range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #4b6043;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4b6043;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.range::-webkit-slider-thumb:hover,
+.range::-moz-range-thumb:hover {
+  transform: scale(1.2); /* Scale thumb on hover */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}

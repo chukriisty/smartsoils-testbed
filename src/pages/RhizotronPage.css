@@ -1,0 +1,243 @@
+.rhizotron-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  background-color: #f8f8f8;
+  width: 100%;
+  font-family: 'Karla', sans-serif;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 40px;
+  color: #4b6043;
+  text-decoration: none;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+.back-arrow:hover {
+  color: #4b6043;
+  transform: translateX(-5px);
+}
+
+.back-text {
+  font-size: 12px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+/* Main Title */
+.rhizotron-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4b6043;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+/* Panel Container */
+.panel-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+/* Bullet Points Section */
+.rhizotron-bullet-points {
+  flex: 1;
+  margin-right: 20px;
+  background-color: #ffffff;
+  border: 2px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.rhizotron-bullet-points ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.rhizotron-bullet-points li {
+  margin-bottom: 10px;
+  color: #4b6043;
+}
+
+/* Chart Section */
+.rhizotron-chart {
+  flex: 1;
+  background-color: #ffffff;
+  border: 2px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.rhizotron-chart-title {
+  text-align: center;
+  font-size: 24px;
+  color: #4b6043;
+  margin-bottom: 10px;
+}
+
+/* Carousel Section */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Ensure arrows are aligned next to carousel */
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 60%;
+  left: 45px;
+  right: 45px;
+  transform: translateY(25%);
+  z-index: 2;
+}
+
+.carousel-arrow {
+  background-color: #ff7f00;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.carousel-arrow.left {
+  position: absolute;
+  left: -100px;
+}
+
+.carousel-arrow.right {
+  position: absolute;
+  right: -40px;
+}
+
+.carousel-arrow:hover {
+  transform: scale(1.1);
+  background-color: #4b6043;
+}
+
+.carousel-arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Phenocam Image Panel */
+.phenocam-image-panel-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  border: 2px solid #747474;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  padding: 5px;
+  animation: slideIn 0.5s ease-out;
+}
+
+.phenocam-image-container {
+  width: calc(100% / 6); /* Six images per row */
+  padding: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.phenocam-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.phenocam-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Move the dates outside the border */
+.phenocam-image-date {
+  position: absolute;
+  top: -35px; /* Move the date above the black border */
+  font-weight: bold;
+  color: #333;
+  width: 100%;
+  text-align: center;
+}
+
+/* Rhizotron Image Panel */
+.rhizotron-image-panel-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  border: 2px solid #747474;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  animation: slideIn 0.5s ease-out;
+}
+
+.rhizotron-image-container {
+  width: calc(100% / 6); /* Six images per row */
+  padding: 5px;
+}
+
+.rhizotron-image {
+  width: 190px;
+  height: 400px; /* Keep Rhizotron images longer */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.rhizotron-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Handling panels with fewer than 6 images */
+.phenocam-image-container.fewer-images, .rhizotron-image-container.fewer-images {
+  flex-grow: 1; /* Allow containers to expand if fewer images are present */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

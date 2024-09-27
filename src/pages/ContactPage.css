@@ -1,0 +1,103 @@
+.contact-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f8f8f8;  /* Light background matching the site */
+  color: #1b3a47;  /* Dark greenish text to match */
+  font-family: 'Karla', sans-serif;
+}
+
+/* Heading Styling */
+h1 {
+  font-size: 42px;
+  color: #00313c;  /* Darker color for main heading */
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 18px;
+  color: #3b6f74;  /* Subdued green for regular text */
+  text-align: center;
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Contact Form Section */
+.contact-form {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.airtable-embed {
+  width: 80%;
+  height: 600px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+}
+
+/* Additional contact info below the form */
+.additional-contact-info {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #3b6f74;
+  text-align: center;
+}
+
+/* Email link styling */
+.additional-contact-info a {
+  color: #f57c00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.additional-contact-info a:hover {
+  color: #ff8c00;
+  text-decoration: underline;
+}
+
+/* Social Media Links */
+.social-media-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social-media-container a {
+  margin: 0 10px;
+  color: #00313c;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-media-container a:hover {
+  color: #ff8c00;  /* Orange color on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .contact-page-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .airtable-embed {
+    height: 500px;
+  }
+}

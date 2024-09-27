@@ -1,0 +1,450 @@
+/* Main wrapper for content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  font-family: "Karla", sans-serif;
+}
+
+/* Slideshow Section */
+.slideshow-section0 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slideshow-logo0 {
+  position: absolute;
+  top: 90px;
+  left: -400px;
+  width: 400px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  animation: slideInLogo 1.5s forwards ease-in;
+}
+
+@keyframes slideInLogo {
+  from {
+    left: -400px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.slideshow {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slideshow-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+/* Fade-in animation for all sections */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* What is SMART Soils Section */
+.smartsoils-overview {
+  padding: 50px 0;
+  background-color: #f8f7f7;
+  text-align: center;
+  min-height: 30vh;
+}
+
+.what-is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-out, transform 1s ease-out, visibility 0s 1s;
+}
+
+.what-is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.smartsoils-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #00313c;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.smartsoils-title::before,
+.smartsoils-title::after {
+  content: '';
+  width: 50px;
+  height: 5px;
+  background-color: #FF6D00;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.smartsoils-title::before {
+  left: -60px;
+}
+
+.smartsoils-title::after {
+  right: -60px;
+}
+
+.smartsoils-definition {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #63666A;
+}
+
+.arrow-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.down-arrow {
+  width: 80px;
+  height: auto;
+}
+
+.smartsoils-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.smartsoils-image {
+  width: 300px;
+  height: auto;
+}
+
+/* Smartsoils Panels with Hover Effect */
+.smartsoils-panel-container {
+  max-width: 1200px; /* Adjust this value as needed */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add padding for responsiveness */
+}
+
+.smartsoils-panels {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: left;
+}
+
+.smartsoils-panel {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeInPanel 1s ease-in forwards;
+  animation-delay: 0.3s;
+}
+
+.smartsoils-panel:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInPanel {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.smartsoils-panel h3,
+.smartsoils-panel p {
+  text-align: left !important; /* Ensure all text is aligned to the left */
+}
+
+.smartsoils-panel h3 {
+  color: #FF6D00;
+  transition: color 0.3s ease;
+}
+
+.smartsoils-panel:hover h3 {
+  color: #00313c;
+}
+
+.smartsoils-panel h3::after {
+  content: ' →';
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.smartsoils-panel:hover h3::after {
+  opacity: 1;
+}
+
+.why-smartsoils {
+  padding: 30px 0;
+  background-color: #e0f7fa;
+  text-align: left;
+  min-height: 70vh;
+}
+
+.why-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 15px;
+  letter-spacing: 0.05rem;
+  padding-left: 30px;
+  display: inline-block;
+  background-color: rgba(50, 50, 50, 0.05);
+  padding: 10px 20px;
+  border-radius: 8px;
+  border-left: 6px solid #FF6D00;
+  box-shadow: none;
+}
+
+.why-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out, visibility 0s 1s;
+}
+
+.why-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Ensure panel links are styled as block elements and remove underline */
+.panel-link {
+  display: block;
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Ensure text color matches parent */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the entire panel */
+.panel-link:hover .smartsoils-panel {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure h3 hover effects remain within the panel hover */
+.panel-link:hover h3 {
+  color: #00313c; /* Same hover color */
+}
+
+
+/* Vision Section */
+.vision {
+  width: 100%;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  text-align: center;
+  background-color: #ffffff;
+  min-height: 25vh;
+}
+
+.vision-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out, visibility 0s 1s;
+}
+
+.vision-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.vision-title {
+  font-size: 1.5rem;
+  color: #FF6D00;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.vision-text {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #63666A;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Main section styling */
+.data-exploration {
+  padding: 50px 30px;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  text-align: left;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  animation: fadeInSection 1s ease-in;
+}
+
+/* Adjust container width and space */
+.data-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Title size reduction */
+.data-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #00313c;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.data-description {
+  font-size: 1.1rem;
+  color: #63666A;
+  max-width: 850px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* List styling with checkmarks */
+.data-list {
+  font-size: 1.2rem;
+  color: #00313c;
+  text-align: left;
+  max-width: 750px;
+  margin-bottom: 50px;
+  list-style-type: none;
+}
+
+.data-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+/* Custom orange checkmark before each list item */
+.data-list li::before {
+  content: '\2713';  /* Unicode for checkmark */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  color: #FF6D00;  /* Orange color for the checkmark */
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+/* Orange-highlighted keywords */
+.data-list strong {
+  color: #FF6D00;  /* Orange color for the important text */
+}
+
+/* Hover effect for list items */
+.data-list li:hover {
+  transform: translateX(5px);  /* Slight movement on hover */
+}
+
+/* Vibrant call to action button */
+.explore-link {
+  padding: 12px 28px;
+  background-color: #FF6D00;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-link:hover {
+  background-color: #e65a00;
+  transform: translateY(-3px);
+}
+
+/* Reduce image size */
+.data-image {
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.data-3d-image {
+  width: 90%;
+  height: auto;
+  border-radius: 15px;
+  margin-left: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .data-container {
+    flex-direction: column;
+  }
+
+  .data-text, .data-image {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .data-3d-image {
+    margin-top: 20px;
+  }
+}

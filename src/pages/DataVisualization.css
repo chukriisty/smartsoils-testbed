@@ -1,0 +1,27 @@
+/* DataVisualization.css */
+
+body {
+  font-family: 'Karla', sans-serif; /* Update the global font to Karla */
+  padding-top: 80px;
+}
+
+.data-title {
+  font-size: 35px; /* Larger font size for the title */
+  color: #000; /* White color for the text to stand out on the overlay */
+  text-align: center; /* Center-align the title */
+  margin-top: 30px;
+  margin-bottom: 10px; /* Add some space below the title */
+  font-weight: 700; /* Make the title bold */
+  position: relative; /* Position relative to create a context for the overlay */
+  display: inline-block; /* Shrink-wrap the content */
+  padding: 15px 34px; /* Add padding around the text for better spacing */
+}
+
+.intro-text {
+  font-size: 16px; /* Reduce the font size */
+  color: #63666a; /* Subtle grey color */
+  text-align: center; /* Center the text */
+  max-width: 800px; /* Limit the width */
+  margin: 0 auto 10px auto; /* Center and add space below */
+}
+

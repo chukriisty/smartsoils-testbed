@@ -1,0 +1,23 @@
+"Component","Sensor","Description","Application","Image"
+
+0,"Radiation","Net radiometer (Apogee; SN-500)","A four-component sensor that measures downwelling (incoming) and upwelling (outgoing) shortwave (~280 to 4000 nm) and longwave (~4000 to 100000 nm) radiation above the surface","Net radiation is an important component of the surface energy balance.","tb_Radiation.png"
+
+1,"PAR","Photosynthetically active radiation (Apogee; SQ-521)","A quantum sensor that measures downwelling radiation (~400 to 700 nm) above the canopy","PAR captures the most utilized wavelengths of the energy spectrum by chlorophylls and other pigments during the photosynthesis process.","tb_PAR.png"
+
+2,"MET","Weather station (METER; ATMOS41)","A weather station that measures air temperature, relative humidity, two-dimensional sonic wind speed and direction, solar radiation, precipitation, and atmospheric pressure above the surface (+2.9 m)","Providing necessary meteorological variables for modeling boundary layer processes","tb_MET.png"
+
+3,"Infrared","Infrared radiometer (Apogee; SI-411)","A radiometer that derives surface temperature from the radiation in the atmospheric window (8 to 14 μm) emitted from the targeted surface (canopy and/or soil)","Surface temperature is an important variable to model turbulent exchanges at the surface and monitor canopy status.","tb_Infrared.png"
+
+4,"SWC","Soil sensors (METER; TEROS12 & TEROS21)","A suite of soil sensors that measure soil temperature, volumetric soil water content (capacitance method) and electrical conductivity, or matric potential (capacitance method via a porous ceramic disc), installed at two lateral locations and four depth (-0.1, -0.3, -0.5, -0.7 m)",Providing necessary belowground variables for modeling soil/plant water availability and belowground hydrological processes","tb_SWC.png"
+
+5,"CO2 Chamber","Soil CO2 flux chambers (EOSENSE; EOSFD)","Two chambers that measure soil CO2 flux using the Forced Diffusion method (a non-dispersive infrared NDIR sensor coupled with a diaphragm pump)","Soil CO2 flux is an important component of the terrestrial carbon cycle controlled by temperature, water availability, and biological activities (photosynthesis, root and microbes respiration).","tb_CO2_chamber.png"
+
+6,"Phenocam","Phenocam (StarDot; NetCam SC)","An RGB camera looking at the testbed surface","Above-ground images are used to visualize and quantify dynamic canopy growth and senesce.","tb_Phenocam.png"
+
+7,"Minirhizotron","Minirhizotrons and root imager (CID Bio-Science; CI-602)","Two transparent root tubes accommodating a high-resolution cylindrical scanner","Below-ground images reveal the dynamic growth and decay of roots.","tb_minirhizotron.png"
+
+8,"ERT","Electrical resistivity tomography (MPT-IRIS; DAS)","An array of sixty-four electrodes (four lines along the long edges of the testbed) used to actively inject current and measure soil electrical resistance","A non-invasive geophysical method to model three-dimensional distribution of soil electrical resistivity, which can be used to map soil water content.","tb_ERT.png"
+
+9,"Loadcell","Load cells (Flintec)","Six load cells located at the bottom of the testbed structure","A weighted lysimeter for mass balance studies","tb_Loadcell.png"
+
+10,"GW Control","Irrigation systems","Drip irrigation lines and a deep pipe","Infrastructure to simulate controlled precipitation and groundwater table rise events during the irrigation experiments.","tb_GW control.png"
