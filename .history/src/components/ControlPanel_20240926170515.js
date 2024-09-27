@@ -70,7 +70,7 @@ const ControlPanel = ({ onComponentSelect }) => {
 
   return (
     <div className="control-panel">
-      <p className="instructions">View individual components below. Toggle to 3D View to explore the 3D model of the testbed. For better rendering, zoom in on the webpage using `Control` + `+` (Windows) or `Command +` (Mac). Select Reset View to return to the original state.</p>
+      <p className="instructions">View individual components below. Toggle to 3D View to view 3D model of the testbed (zoom-in the web page once to achieve better rendering). Select Reset View to return to the original state.</p>
       
       {/* Dynamically Generated Buttons */}
       <div className="button-list">

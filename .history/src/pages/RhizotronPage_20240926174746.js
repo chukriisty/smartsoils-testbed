@@ -116,7 +116,7 @@ const RhizotronPage = () => {
             You can switch between the sensors using the dropdown to see data from each location.
           </p>
           {/* Add dropdown for T1/T2 selection */}
-          <div className="t-inputbox">
+          <div className="inputbox">
             <label htmlFor="sensor-select">Sensor:</label>
             <select id="sensor-select" value={selectedSource} onChange={handleSourceChange}>
               <option value="T1">T1</option>

@@ -1,0 +1,97 @@
+/* TimeSeriesPlot.css */
+
+/* Main container for the 3D viewer page */
+.timeseries-page {
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+  background-color: #ffffff; /* White background for the webpage */
+  align-items: center;
+}
+
+/* Add keyframes for fade-in and slide-in animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the title */
+.title {
+  font-size: 28px;
+  color: #ffffff; /* White text color */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #0f99a6; /* Dark green background */
+  padding: 12px 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Strong shadow */
+  animation: fadeInUp 1s ease-in-out; /* Apply the animation */
+}
+
+  
+.timeseries-container {
+    padding: 20px;
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 50px;
+  }
+
+  .dropdown-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .dropdown-container label {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .dropdown-container select {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .generate-button {
+    background-color: #4b6043; /* Orange color for reset button */
+    color: #ffffff; /* Dark green text for readability */
+  }
+
+  .description {
+    padding: 20px;
+    /*  background-color: #f0f0f0; Light grey background */
+    border-radius: 5px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Subtle shadow for depth */
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-right: 50px;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .description label {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .description li {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+  }

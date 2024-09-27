@@ -25,6 +25,13 @@ const BuRd = [
   [0.7, 'rgb(106,137,247)'], [1, 'rgb(5,10,172)'], 
 ];
 
+const [isVisible, setIsVisible] = useState(false);
+
+useEffect(() => {
+  setTimeout(() => {
+    setIsVisible(true); // Trigger the fade-in after a delay
+  }, 500); // Adjust the delay as needed
+}, []);
 
 const layout2D = {
     xaxis: {
@@ -302,13 +309,6 @@ const ERTPage = () => {
    }
 
    //console.log(zData)
-   const [isVisible, setIsVisible] = useState(false);
-
-   useEffect(() => {
-     setTimeout(() => {
-       setIsVisible(true); // Trigger the fade-in after a delay
-     }, 500); // Adjust the delay as needed
-   }, []);
 
   return (
       

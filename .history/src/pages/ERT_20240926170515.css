@@ -27,19 +27,7 @@ body, .ert2d-page {
   align-items: center;
   justify-content: left;
 }
-/* Add keyframes for fade-in animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-/* Apply the fade-in animation to the note box */
 .note {
   grid-column: 1 / 3;
   grid-row: 2;
@@ -55,15 +43,7 @@ body, .ert2d-page {
   padding: 0px;
   overflow: hidden;
   margin-top: 30px;
-  margin-left: 100px;
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards; /* Trigger fade-in animation */
-}
-
-/* Optionally, apply animations to other elements */
-.box:hover {
-  transform: scale(1.1);
-  background-color: #8b9a6d;
+  margin-left:100px;
 }
 
 .calibration {
