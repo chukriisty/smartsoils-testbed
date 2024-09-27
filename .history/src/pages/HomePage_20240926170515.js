@@ -136,7 +136,7 @@ const HomePage = () => {
           <div className="smartsoils-panels">
             <a href="/data-visualization/sensor-layout" className="panel-link">
               <div className="smartsoils-panel">
-                <h3>Why care about SMARTSoils?</h3>
+                <h3>Why Care About SMARTSoils?</h3>
                 <p>
                 The SMART Soils Testbed is at the right level of complexity between laboratory and field scale research.  Driven by natural forcings and supported by comprehensive sensing, the gained insights of the coupled plant-soil-microbial interactions are transferrable to the field scales. See the sensor layout and explore the 3D interactive model to better understand the role of each sensor in the testbed.
                 </p>
@@ -145,7 +145,7 @@ const HomePage = () => {
 
             <a href="/data-visualization/phenocam" className="panel-link">
               <div className="smartsoils-panel">
-                <h3>Why use phenocam sensors?</h3>
+                <h3>Why Use Phenocam Sensors?</h3>
                 <p>
                 Phenocams track the surface vegetative dynamics over time, offering insights into the plant growth dynamics in response to seasonal and annual changes. This helps correlate aboveground plant activity with belowground dynamics for exploring mechanisms driving system evolution.
                 </p>
@@ -163,7 +163,7 @@ const HomePage = () => {
 
             <a href="/data-visualization/ert" className="panel-link">
               <div className="smartsoils-panel">
-                <h3>Why water level and resistivity?</h3>
+                <h3>Why Water Level and Resistivity?</h3>
                 <p>
                 Real time monitoring of water level and soil resistivity allows for the visualization of hydrological processes that underpin plant and biogeochemical dynamics. Electrical Resistivity Tomography (ERT) provides a full 4D view of the ecosystem in terms of moisture dynamics and hydrological properties that link to plant stress and dynamics.  
                 </p>
