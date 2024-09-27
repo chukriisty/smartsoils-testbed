@@ -1,0 +1,55 @@
+/* Main container */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    background-color: #1c1c1e; /* Darker, elegant background */
+    color: #f2f2f2; /* Softer text color for better readability */
+    text-align: center;
+  }
+  
+  /* Pulsating animation for the "Coming Soon" text */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .coming-soon-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff6f61; /* Softer red-orange tone */
+    animation: pulse 2s infinite; /* Apply pulsating animation */
+  }
+  
+  /* Back to Home Button */
+  .back-home-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4b6043; /* Dark green for a softer effect */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .back-home-button:hover {
+    background-color: #8b9a6d; /* Slightly lighter green on hover */
+    transform: scale(1.05); /* Grows slightly on hover */
+  }
+  
