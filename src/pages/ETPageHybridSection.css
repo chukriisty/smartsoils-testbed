@@ -1,0 +1,292 @@
+h2.hybrid-title {
+    color: #323335;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h5.hybrid-title {
+    color: #323335;
+    max-width: 75vw;
+    font-weight: bold;
+}
+
+h6.hybrid-title {
+    color: #323335;
+}
+
+.hybrid-section {
+    background-color: #f9f9f9;
+    font-size: 16px;
+    /* child */
+    display: flex;
+    flex-direction: column;
+}
+
+    .hybrid-all {
+        padding: 20px 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        /* child */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .hybrid-model {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            /* child */
+            display: block;
+            justify-items: center;
+        }
+
+            .hybrid-model-input-container {
+                margin-bottom: 30px;
+                max-width: 75vw;
+                /* child */
+                display: flex;
+                flex-direction: column;
+            }
+
+                .hybrid-model-input-button-container {
+                    padding: 10px 10px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    border: 3px solid #00313C;
+                    border-radius: 10px;
+                    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+                    /* child */
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    gap: 5px;
+                }
+
+                    .hybrid-model-input-button-container button {
+                        padding: 5px 5px;
+                        background-color: white;
+                        border: 2px solid #007681;
+                        border-radius: 5px;
+                        color: #007681;
+                        font-weight: bold;
+                        transition: all 0.3s ease;
+                        width: 14vw;
+                        height: 5vh;
+                        font-size: 1.2vw;
+                    }
+                    
+                    .hybrid-model-input-button-container button:hover {
+                        background-color: #007681;
+                        color: white;
+                        transform: scale(1.25);  /* Slightly scale up on hover */
+                    }
+
+                    .hybrid-model-input-button-container button.active {
+                        background-color: #007681;
+                        color: white;
+                    }
+
+            .hybrid-model-visualization {
+                padding: 10px 10px;
+                border: 3px solid #323335;
+                border-radius: 10px;
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+                margin-bottom: 30px;
+                width: 100%; /* Adjusted width for a more focused display */
+                height: auto; /* Adjust height to better match image dimensions */
+                max-width: 75vw;
+                overflow: hidden; /* Ensure that images don't overflow the container */
+                /* child */
+                display: block;
+                justify-items: center;
+            }
+
+                .hybrid-model-visualization button {
+                    padding: 5px 5px;
+                    margin-bottom: 20px;
+                    background-color: white;
+                    border: 2px solid #63666A;
+                    border-radius: 5px;
+                    color: #63666A;
+                    font-weight: bold;
+                    transition: all 0.3s ease;
+                }
+                
+                .hybrid-model-visualization button:hover {
+                    background-color: #63666A;
+                    color: white;
+                    transform: scale(1.1);  /* Slightly scale up on hover */
+                }
+
+                .hybrid-model-structure {
+                    padding: 10px 10px;
+                    width: 100%; /* Adjusted width for a more focused display */
+                    height: auto; /* Adjust height to better match image dimensions */
+                    overflow: hidden; /* Ensure that images don't overflow the container */
+                    /* child */
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+
+                    .hybrid-model-structure img {
+                        margin-left: 30px;
+                        max-height: 35vh;
+                        border-radius: 10px; /* Slightly round the image corners to match the container */ 
+                        animation: fadeIn 2s ease-out; /* Fade-in effect for image */
+                    }
+
+                    .hybrid-model-structure-description {
+                        border-radius: 10px; /* Slightly round the image corners to match the container */ 
+                        text-align: left;
+                        margin-left: 30px;
+                    }
+
+                        .hybrid-model-structure-description-bullets {
+                            color: #000000;
+                        }
+
+                            .hybrid-model-structure-description-bullets legend {
+                                color: #323335;
+                                font-size: 1.25rem;
+                                font-weight: bold;
+                            }
+            
+                            .hybrid-model-structure-description-bullets ul {
+                                list-style-type: square;
+                            }
+                            
+                            .hybrid-model-structure-description-bullets li {
+                                color: #000000;
+                                text-align: left;
+                                padding-left: 5px;
+                                font-size: 1.1rem;
+                                margin-bottom: 10px;
+                            }
+                    
+                    .hybrid-timeseries-output {
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 30px;
+                        margin-right: 30px;
+                        /* child */
+                        display: grid;
+                        grid-template-columns: 2fr 1fr;
+                        grid-template-rows: auto auto;
+                        align-items: center;
+                        gap: 10px;
+                    }
+
+                        .hybrid-timeseries {
+                            max-width: 40vw;
+                            grid-row: 1 / 3;
+                            grid-column: 1;
+                        }
+
+                        .hybrid-model-equation {
+                            width: 100%; /* Adjusted width for a more focused display */
+                            height: auto; /* Adjust height to better match image dimensions */
+                            overflow: hidden; /* Ensure that images don't overflow the container */
+                            grid-row: 1;
+                            grid-column: 2;
+                        }
+
+                            .hybrid-model-equation img {
+                                margin-right: 30px;
+                                max-width: 20vw;
+                                border-radius: 10px; /* Slightly round the image corners to match the container */ 
+                                animation: fadeIn 2s ease-out; /* Fade-in effect for image */
+                            }
+
+                            .hybrid-model-note {
+                                text-align: left;
+                                font-size: 1.1rem;
+                                max-width: 20vw;
+                                color: #63666A
+                            }
+
+            .hybrid-model-output-container {
+                max-width: 65vw;
+                /* child */
+                display: flex;
+                flex-direction: column;
+            }
+
+                .hybrid-model-output-button-container {
+                    padding: 10px 10px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    border: 3px solid #D57800;
+                    border-radius: 10px;
+                    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+                    /* child */
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 5px;
+                }
+
+                    .hybrid-model-output-button-container button {
+                        padding: 5px 5px;
+                        background-color: white;
+                        border: 2px solid #ff6d00;
+                        border-radius: 5px;
+                        min-width: 20vw;
+                        height: 5vh;
+                        color: #ff6d00;
+                        font-weight: bold;
+                        transition: all 0.3s ease;
+                        
+                    }
+                    
+                    .hybrid-model-output-button-container button:hover {
+                        background-color: #ff6d00;
+                        color: white;
+                        transform: scale(1.1);  /* Slightly scale up on hover */
+                    }
+
+                    .hybrid-model-output-button-container button.active {
+                        background-color: #ff6d00;
+                        color: white;
+                    }
+
+        .hybrid-summary {
+            max-width: 50vw;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: #000000;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+
+        .hybrid-plots-1to1 {
+            padding: 10px 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            max-width: 85vw;
+            /* child */
+            display: flex;
+            flex-direction: row;
+        }
+
+            .hybrid-1to1 {
+                padding: 10px 10px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+                margin-right: 5px;
+                border: 3px solid #63666A;
+                border-radius: 10px;
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+                min-width: 26vw;
+                max-height: 50vh;
+                /* child */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }

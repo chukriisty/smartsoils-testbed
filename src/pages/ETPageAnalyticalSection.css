@@ -1,0 +1,117 @@
+h2.analytical-title {
+    color: #00313C;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h5.analytical-title {
+    color: #00313C;
+    max-width: 75vw;
+    font-weight: bold;
+}
+
+.analytical-section {
+    background-color: #e9f9fc;
+    font-size: 16px;
+    /* child */
+    display: flex;
+    flex-direction: column;
+}
+
+    .analytical-all {
+        padding: 20px 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        /* child */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .analytical-pm-image-container {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 100%; /* Adjusted width for a more focused display */
+            height: auto; /* Adjust height to better match image dimensions */
+            max-width: 70vw;
+            max-height: 50vh;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px; /* Rounded corners for a softer, organic feel */
+            overflow: hidden; /* Ensure that images don't overflow the container */
+        }
+
+            .analytical-pm-image-container img {
+                max-width: 70vw;
+                max-height: 50vh;
+                border-radius: 10px; /* Slightly round the image corners to match the container */ 
+                animation: fadeIn 2s ease-out; /* Fade-in effect for image */
+            }
+        
+        .analytical-pm-description-bullets {
+            color: #000000;
+            margin-bottom: 30px;
+            max-width: 50vw;
+        }
+
+            .analytical-pm-description-bullets ul {
+                list-style-type: disc;
+            }
+            
+            .analytical-pm-description-bullets li {
+                color: #000000;
+                text-align: left;
+                padding-left: 5px;
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+            }
+
+        .analytical-plots {
+            padding: 20px 20px;
+            margin-bottom: 30px;
+            margin-left: 50px;
+            margin-right: 50px;
+            border: 5px solid #007681;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            max-width: 60vw;
+            /* child */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+            .analytical-plot-description-bullets {
+                color: #000000;
+                margin-right: 20px;
+            }
+
+                .analytical-plot-description-bullets ul {
+                    list-style-type: square;
+                }
+                
+                .analytical-plot-description-bullets li {
+                    color: #000000;
+                    text-align: left;
+                    padding-left: 5px;
+                    font-size: 1.1rem;
+                    margin-bottom: 10px;
+                }
+
+            .analytical-timelapse {
+                padding: 10px 10px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+                margin-right: 5px;
+                background-color: #f9f9f9;
+                border: 3px solid #00313C;
+                border-radius: 10px;
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+                min-height: 25vh;
+                animation: fadeIn 2s ease-out; /* Fade-in effect for image */
+            }

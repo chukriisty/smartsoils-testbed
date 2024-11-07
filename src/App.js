@@ -9,6 +9,9 @@ import ERTPage from './pages/ERT';
 import SensorComponentPage from './pages/SensorComponentPage';
 import RhizotronPage from './pages/RhizotronPage';
 import SensorTimeSeriesPage from './pages/SensorTimeSeriesPage';
+import ETPage from './pages/ETPage';
+import SoilCO2Page from './pages/SoilCO2Page';
+import ParflowPage from './pages/ParflowPage';
 import ContactPage from './pages/ContactPage';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -28,6 +31,9 @@ function App() {
             <Route path="/data-visualization/rhizotron" element={<RhizotronPage />} />
             <Route path="/data-visualization/sensor-time-series" element={<SensorTimeSeriesPage />} />
             <Route path="/science" element={<SciencePage />} />
+            <Route path="/science/et" element={<ETPage />} />
+            <Route path="/science/soil-co2" element={<SoilCO2Page />} />
+            <Route path="/science/parflow" element={<ParflowPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </div>
