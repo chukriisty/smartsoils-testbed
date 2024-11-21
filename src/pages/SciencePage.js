@@ -6,11 +6,12 @@ const components = [
   {
     id: 1,
     name: 'Evapotranspiration',
-    image: '/assets/et.jpg',
+    image: 'https://smartsoils-testbed.s3.amazonaws.com/assets/et.jpg',
     description: 'Explore how data from the Testbed is used to improve ET model using a machine learning approach.',
     link: '/science/et',
     buttonLabel: 'Go to ET'
   },
+  /*
   {
     id: 2,
     name: 'Soil Carbon Flux',
@@ -27,6 +28,7 @@ const components = [
     link: '/science/parflow',
     buttonLabel: 'Go to Parflow',
   },
+  */
 ];
 
 const SciencePage = () => {

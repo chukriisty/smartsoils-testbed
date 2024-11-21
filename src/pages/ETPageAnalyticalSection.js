@@ -66,7 +66,7 @@ function AnalyticalSection () {
               <h2 className="analytical-title">Penman-Monteith Model</h2>
               <h5 className="analytical-title">A widely adopted equation with analytical solutions to estimate evapotranpsiration in ecosystem models</h5>
               <div className="analytical-pm-image-container">
-                  <img src={'/assets/pm.png'} // https://smartsoils-testbed.s3.amazonaws.com
+                  <img src={'https://smartsoils-testbed.s3.amazonaws.com/assets/pm.png'}
                   />
               </div>
               <div className="analytical-pm-description-bullets">

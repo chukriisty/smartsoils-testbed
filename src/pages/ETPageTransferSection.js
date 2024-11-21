@@ -133,7 +133,7 @@ function TransferSection() {
             <h2 className="transfer-title">Model Transferability</h2>
             <h5 className="transfer-title">Improving field ET prediction with the hybrid model developed from SMARTSoils Testbed</h5>
             <div className="transfer-image-container">
-                <img src={'/assets/field_low.png'} // https://smartsoils-testbed.s3.amazonaws.com
+                <img src={'https://smartsoils-testbed.s3.amazonaws.com/assets/field_low.png'}
                 />
             </div>
             <div className="transfer-description-bullets">

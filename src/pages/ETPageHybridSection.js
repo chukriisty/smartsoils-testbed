@@ -131,7 +131,7 @@ const inactiveStroke = "none"
                           selectedVariable === null ? (
                               <div className="hybrid-model-structure">
                                   <div>
-                                      <img src={'/assets/ann.png'} // https://smartsoils-testbed.s3.amazonaws.com
+                                      <img src={'https://smartsoils-testbed.s3.amazonaws.com/assets/ann.png'}
                                           />
                                   </div>
                                   <div className="hybrid-model-structure-description">
@@ -180,7 +180,7 @@ const inactiveStroke = "none"
                                           </ResponsiveContainer>
                                       </div>
                                       <div className="hybrid-model-equation">
-                                          <img src={'/assets/r.png'} // https://smartsoils-testbed.s3.amazonaws.com
+                                          <img src={'https://smartsoils-testbed.s3.amazonaws.com/assets/r.png'}
                                           />
                                       </div>
                                       <div>
